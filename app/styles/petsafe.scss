@@ -4,7 +4,7 @@ html {
 
 body {
 	width: 100%;
-	font-family: 'museo-sans', sans-serif;
+	font-family: 'Droid Sans', sans-serif;
 	background: url(../images/body-bg.png) no-repeat 50% 0;
 }
 
@@ -14,7 +14,7 @@ a {
 
 header a#logo {
 	position: absolute;
-	top: 26px;
+	top: 5px;
 	left: -78px;
 	display: block;
 	width: 315px;
@@ -34,7 +34,8 @@ header a#logo {
 
 #utility-nav {
 	height: 39px;
-	line-height: 36px;
+	line-height: 5px;
+	// line-height: 36px;
 	text-align: right;
 }
 
@@ -43,7 +44,7 @@ header a#logo {
 }
 
 .utility-nav-item>a {
-	font-family: 'museo-sans', sans-serif;
+	font-family: 'Droid Sans', sans-serif;
 	font-weight: 600;
 	font-size: 13px;
 	color: #4694ca;
@@ -54,16 +55,26 @@ header a#logo {
 
 .free-shipping-utility-img {
 	float: left;
+	margin-top: -20px;
 }
 
 .free-shipping-utility-copy {
 	float: left;
-	padding-top: 10px;
-	// color: white;
+	padding-top: 0px;
 	font-size: 18px;
 	text-align: left;
 	line-height: 10px;
+	margin-top: -8px;
+	color: white;
 }
+// .free-shipping-utility-copy {
+// 	float: left;
+// 	padding-top: 10px;
+// 	// color: white;
+// 	font-size: 18px;
+// 	text-align: left;
+// 	line-height: 10px;
+// }
 
 .free-shipping-utility-subcopy {
 	font-size: 10px;
@@ -76,9 +87,10 @@ header a#logo {
 	background: url(../images/search-bg-960.png) no-repeat 0 19px;
 }
 
-nav {
+#nav {
 	width: 100%;
-	height: 75px;
+	height: 35px;
+	// height: 75px;
 	line-height: 75px;
 	clear: both;
 }
@@ -86,12 +98,18 @@ nav {
 #nav div {
 	float: right;
 	width: auto;
+
+	margin-top: -15px;
+	margin-bottom: 60px;
 }
 
 .main-nav-item>a {
 	display: block;
-	font: 500 19px/75px 'museo-slab';
-	// color: #fff;
+	font-family: 'Josefin Slab', serif;
+	font-size: 24px;
+	letter-spacing: .5px;
+	font-weight: 500;
+	color: #fff;
 	padding: 0 26px;
 	text-decoration: none;
 	text-shadow: -2px 0 2px rgba(0,0,0,.2);
@@ -103,6 +121,14 @@ nav {
 	height: 56px;
 }
 
+#search #main-search input[type=text] {
+	padding: 0 35px 0 5px;
+	height: 33px;
+	width: 100px;
+	border: 0;
+	outline: 0;
+	background: 0;
+}
 // End Nav
 
 // Slider
@@ -127,6 +153,62 @@ nav {
 	border: 0;
 }
 
+.slide-content {
+	position: absolute;
+	top: 15%;
+	left: 6.984127%;
+}
+
+.slide-content h1 {
+	font-family:'Josefin Slab', serif;
+	font-weight: bold;
+	font-size: 40px;
+	color: #fff;
+	margin: 0 0 10px;
+	text-shadow: 1px 0 1px rgba(0,0,0,.75);
+}
+
+.slide-content p {
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: #c9c9c9;
+	text-shadow: 1px 0 1px rgba(0,0,0,.75);
+	margin: 0 50px 20px 0;
+}
+
+.btn-yellow {
+	display: inline-block;
+	height: 53px;
+	padding: 0 50px 0 0;
+	text-decoration: none;
+	background: url(../images/btn-yellow-right.png) no-repeat top right;
+}
+
+.btn-yellow span {
+	display: block;
+	float: left;
+	height: 53px;
+	padding: 0 0 0 15px;
+	font-family: 'Josefin Slab', serif;
+	font-size: 22px;
+	color: #fff;
+	text-shadow: 1px 0 1px rgba(0, 0, 0, 1);;
+	background: url(../images/btn-yellow.png) no-repeat top left;
+	overflow: hidden;
+	padding: 13px;
+}
+
+#free-shipping-left {
+	position: absolute;
+	width: 316px;
+	height: 87px;
+	z-index: 5;
+	display: block;
+	top: 14px;
+	left: -11px;
+}
+
 // Homepage CAtegories
 
 #homepage-categories {
@@ -144,9 +226,9 @@ nav {
 }
 
 .cat-col h3, .cat-col h3 a {
-	font-family: 'museo-slab', sans-serif;
-	font-weight: 700px;
-	font-size: 21px;
+	font-family: 'Josefin Slab', serif;
+	font-weight: bold;
+	font-size: 28px;
 	color: #504f4f;
 	margin: 0 0 8% 0;
 	text-decoration: none;
@@ -164,18 +246,6 @@ nav {
 	z-index: 3;
 }
 
-.cat-col .learn-more span {
-	display: block;
-	width: 127px;
-	height: 37px;
-	line-height: 37px;
-	padding-left: 20px;
-	color: #fff;
-	font-weight: 600;
-	font-family: 'museo-sans', sans-serif;
-	text-transform: uppercase;
-	background: #016ab7;
-}
 
 .cat-col-img {
 	position: relative;
@@ -196,8 +266,8 @@ nav {
 
 .cat-col p {
 	margin: 0 9px;
-	font-size: 15px;
-	line-height: 20px;
+	font-size: 18px;
+	line-height: 23px;
 	color: #5f5e5e;
 }
 
@@ -214,10 +284,13 @@ nav {
 }
 
 .cat-col ul li a {
-	font-family: 'museo sans', sans-serif;
+	font-family: 'Droid Sans', sans-serif;
 	color: #0160a6;
 	border-bottom: 0;
 	text-decoration: underline;
+	font-weight: bold;
+	font-size: 18px;
+	letter-spacing: .5px;
 }
 
 .cat-col-img img {
@@ -231,4 +304,23 @@ nav {
 
 .cat-col.second {
 	margin: 0 5% 0 0;
+}
+
+.pad {
+	padding-top: 75px;
+
+}
+
+.cat-col .learn-more span {
+	display: block;
+	width: 127px;
+	height: 37px;
+	line-height: 37px;
+	padding-left: 9px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: 'Droid Sans', sans-serif;
+	text-transform: uppercase;
+	background: #016ab7;
 }
